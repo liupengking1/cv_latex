@@ -187,7 +187,7 @@
               \begin{array}{l}
               {\href{\cvlinkedin}{\includegraphics[scale=0.04]{img/LinkedIn_Logo.png}}}
               \end{array}
-              $} & \href{\cvlinkedin}{\hspace{16mm}/in/hsgadgil} \\
+              $} & \href{\cvlinkedin}{\hspace{16mm}/in/peng-liu} \\
             }
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
             {$
