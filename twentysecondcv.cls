@@ -162,11 +162,10 @@
   \begin{tikzpicture}[remember picture,overlay]
       \node [rectangle, fill=sidecolor, anchor=north, minimum width=9cm, minimum height=\paperheight+1cm] (box) at (-5cm,0.5cm){};
   \end{tikzpicture}
-
+  
   %------------------------------------------------
 
   \begin{textblock}{6}(0.5, 0.2)
-
     %------------------------------------------------
     
         \vspace{4mm}
@@ -177,7 +176,13 @@
     {\Large\color{black!80}\cvjobtitle}
 
     %------------------------------------------------
-    
+    \vspace{3mm}
+    {$
+    	\begin{array}{l}
+        \hspace{-2mm}{\includegraphics[scale=0.08]{img/head.png}}
+        \end{array}
+     $} 
+
         \vspace{5mm}
     \renewcommand{\arraystretch}{1.6}
     \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
@@ -213,7 +218,6 @@
     \end{tabular}
 
     %------------------------------------------------
-        \vspace{3mm}
         \profilesection{Skills}{4cm}
 
     	\skills
@@ -225,12 +229,6 @@
         \interests
         
         \vspace{3mm}
-        \profilesection{Languages}{2.4cm} 
-        {$
-              \begin{array}{l}
-              \hspace{-2mm}{\includegraphics[scale=0.45]{img/languages_muted.png}}
-              \end{array}
-        $}   
   \end{textblock}
 }
 
