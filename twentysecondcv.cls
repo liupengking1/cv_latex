@@ -179,7 +179,7 @@
     \vspace{3mm}
     {$
     	\begin{array}{l}
-        \hspace{-2mm}{\includegraphics[scale=0.30]{img/head_small.png}}
+        \hspace{0mm}{\includegraphics[scale=0.30]{img/head_small.png}}
         \end{array}
      $} 
 
