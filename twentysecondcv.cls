@@ -129,6 +129,7 @@
 % Define custom commands for CV info
 \newcommand{\cvdate}[1]{\renewcommand{\cvdate}{#1}}
 \newcommand{\cvlinkedin}[1]{\renewcommand{\cvlinkedin}{#1}}
+\newcommand{\cvgithub}[1]{\renewcommand{\cvgithub}{#1}}
 \newcommand{\cvmail}[1]{\renewcommand{\cvmail}{#1}}
 \newcommand{\cvnumberphone}[1]{\renewcommand{\cvnumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\cvaddress}{#1}}
@@ -187,13 +188,19 @@
     \renewcommand{\arraystretch}{1.6}
     \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
         
-          \ifthenelse{\equal{\cvlinkedin}{}}{}{
-            {$
-              \begin{array}{l}
-              {\href{\cvlinkedin}{\includegraphics[scale=0.04]{img/LinkedIn_Logo.png}}}
-              \end{array}
-              $} & \href{\cvlinkedin}{\hspace{16mm}/in/peng-liu} \\
-            }
+      \ifthenelse{\equal{\cvlinkedin}{}}{}{
+        {$
+          \begin{array}{l}
+          {\href{\cvlinkedin}{\includegraphics[scale=0.04]{img/LinkedIn_Logo.png}}}
+          \end{array}
+          $} & \href{\cvlinkedin}{\hspace{16mm}/in/peng-liu} \\}
+      \ifthenelse{\equal{\cvgithub}{}}{}{
+        {$
+          \begin{array}{l}
+          {\hspace{-1.5mm}\href{\cvgithub}{\includegraphics[scale=0.06]{img/GitHub_Logo.png}}}
+          \end{array}
+          $} & \href{\cvgithub}{\hspace{6mm}/pengdev} \\
+        }
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
             {$
               \begin{array}{l}
@@ -207,7 +214,7 @@
               {\href{\cvsite}{\includegraphics[scale=0.05]{img/globe-512.png}}}
               \end{array}
               $} 
-            & \cvsite\\}
+            & {\href{\cvsite}{\cvsite}}\\}
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
